@@ -1,0 +1,9 @@
+To deploy to google cloud run:
+    1. check https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service
+    2. Create a file named main.py and put your flask api you want to deploy into
+    3. Create a file named requirements.txt and paste the following code into it:
+        -      Flask==2.1.0
+        -      gunicorn==20.1.0
+    4. Add a Dockerfile
+    5. Add a .dockerignore file to exclude files from your container image.
+    6. Run : gcloud run deploy
